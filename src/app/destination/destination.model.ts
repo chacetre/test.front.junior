@@ -10,4 +10,5 @@ export interface IDestination {
 	bg: string;
 	thumbnail: string;
 	gallery: string[];
+    activities : string[];
 }

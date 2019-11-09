@@ -12,7 +12,9 @@
 								{{destination.description}}
 							</div>
 						</div>
+						
 					</section>
+
 					<section class="grid-md4 grid-lg3 grid-lgOffset1 infos-section">
 						<div class="infos">
 							<ul>
@@ -33,6 +35,28 @@
 							</ul>
 						</div>
 						<app-destination-gallery [destination]="destination"></app-destination-gallery>
+                        
+					</section>
+
+					<section class=" activities-section" >
+							
+							<h3>Activités touristiques</h3>
+						
+						<div class="grid">
+							<div class="grid-md4 grid-lg3" *ngFor="let activity of activities">
+							<div class="card" >
+									<div class="card-image">
+											<img [src]="activity.thumbnail" alt="thumbnail">
+										</div>
+									<div class="card-content">
+											<h2>{{activity.name}}</h2>
+											<p>
+												{{activity.description}}
+											</p>
+									</div>
+								</div>
+							</div>
+							</div>
 					</section>
 		</div>
 	</div>

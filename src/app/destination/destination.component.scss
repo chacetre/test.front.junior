@@ -32,6 +32,7 @@
 .card-content {
 	color: #666;
 }
+
 .presentation-section {
 	position: relative;
 	z-index: 1;
@@ -41,10 +42,32 @@
 			color: #fff;
 		}
 	}
-	h1, h2 {
+	h1, h2, h3 {
 		color: #fff;
 	}
 }
+
+.activities-section{
+
+	h3 {
+		color: #fff;
+	}
+
+	.card-image {
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		height: 100px;
+	}
+
+	.card {
+		height: 300px;
+		overflow: hidden;
+	}
+}
+
 
 .infos-section {
 	color: #fff;

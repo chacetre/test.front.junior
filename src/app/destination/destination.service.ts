@@ -18,6 +18,4 @@ export class DestinationService {
 	getDestinationById(id: string): Observable<IDestination> {
 		return this.http.get<IDestination>(`/api/destination/${id}`);
 	}
-
-	
 }
